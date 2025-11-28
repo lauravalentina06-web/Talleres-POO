@@ -1,0 +1,8 @@
+public class Main {
+  static void mensajeBienvenida() {
+    System.out.println("¡Bienvenido a bordo!");
+  }
+  public static void main(String[] args) {
+    mensajeBienvenida();
+  }
+}
