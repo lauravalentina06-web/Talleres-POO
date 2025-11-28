@@ -1,0 +1,43 @@
+public class Asistente {
+
+    // Atributo: cada asistente tiene su propio número de asiento
+    private int numeroAsiento = 5; // valor por defecto
+
+    // Constructor vacío (usa el asiento por defecto)
+    public Asistente() {
+    }
+
+    // Constructor para asignar un número de asiento específico
+    public Asistente(int numeroAsiento) {
+        this.numeroAsiento = numeroAsiento;
+    }
+
+    // Getter
+    public int getNumeroAsiento() {
+        return numeroAsiento;
+    }
+
+    // Setter
+    public void setNumeroAsiento(int numeroAsiento) {
+        this.numeroAsiento = numeroAsiento;
+    }
+}
+
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Crear dos asistentes independientes
+        Asistente a1 = new Asistente();        // tendrá asiento 5
+        Asistente a2 = new Asistente();        // también inicia en 5
+
+        // Cambiar el asiento SOLO del asistente 1
+        a1.setNumeroAsiento(10);
+
+        // Imprimir para comprobar que son independientes
+        System.out.println("Asistente 1 - asiento: " + a1.getNumeroAsiento());
+        System.out.println("Asistente 2 - asiento: " + a2.getNumeroAsiento());
+    }
+}
+
