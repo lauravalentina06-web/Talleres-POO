@@ -1,0 +1,19 @@
+//Clase
+public class Main {
+//Atributo guarda el numero en el objeto 
+  int x;
+//Constructor llega el numero que se guarda
+  public Main(int y) {
+ 
+    x = y;
+  }
+
+  public static void main(String[] args) {
+//se crea el objeto 
+//Se envia un numero para que lo guarde en este caso es 5
+    Main myObj = new Main(5);
+
+//Imprime el numero que se guardo en x
+    System.out.println(myObj.x);
+  }
+}
