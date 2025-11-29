@@ -1,3 +1,19 @@
+
+
+public class Main {
+    public static void main(String[] args) {
+        //  Crear un objeto de la clase Person
+        Person persona = new Person();
+
+        //  Usar el setter para darle un nombre
+        persona.setName("Laura");
+
+        //  Usar el getter para mostrar el nombre
+        System.out.println("El nombre de la persona es: " + persona.getName());
+    }
+}
+
+
 public class Person {
   private String name; // private = restricted access
 
