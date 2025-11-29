@@ -1,0 +1,46 @@
+//Crea una clase Producto que tendrá dos tipos de constructores:
+//uno vacío (por defecto) y otro con parámetros para inicializar los datos inmediatamente
+
+public class Producto {
+
+    //Atributos de la clase
+    String id;
+    String descripcion;
+    double valor;
+
+    //Constructor vacío
+    public Producto() {
+    }
+
+    //Constructor con parámetros
+    public Producto(String idProd, String descProd, double valorProd) {
+        id = idProd;
+        descripcion = descProd;
+        valor = valorProd;
+    }
+
+    //Método para mostrar la información
+    void mostrar() {
+        System.out.println("ID: " + id);
+        System.out.println("Descripción: " + descripcion);
+        System.out.println("Valor: " + valor);
+    }
+
+    public static void main(String[] args) {
+
+        //Crear objeto 1 (Constructor vacío)
+        Producto p1 = new Producto();
+        p1.id = "A00";
+        p1.descripcion = "Sin datos";
+        p1.valor = 0;
+
+        //Crear objeto 2 (Constructor con parámetros)
+        Producto p2 = new Producto("A01", "Galletas", 2500);
+
+        //Mostrar datos
+        p1.mostrar();
+        System.out.println("---------------------");
+        p2.mostrar();
+    }
+}
+
