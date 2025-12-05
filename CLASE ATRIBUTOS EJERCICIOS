@@ -1,0 +1,69 @@
+//--------EJERCICIO 1 ATRIBUTOS-------------------------------------------------
+public class Main {
+  // Atributo de la clase (variable global)
+  // Aquí guardo un número entero para usarlo dentro del objeto
+  int x = 5;
+
+  public static void main(String[] args) {
+    // Creo un objeto de la clase Main para poder acceder al atributo x
+    Main myObj = new Main();
+
+    // Imprimo el valor de x del objeto que acabo de crear
+    System.out.println(myObj.x);
+  }
+}
+//-----------EJERCICIO 2 ATRIBUTOS--------------------------------------------
+public class Main {
+  // Atributo de la clase (aquí voy a guardar un número)
+  int x;
+
+  public static void main(String[] args) {
+    // Creo un objeto de la clase Main para poder usar sus variables
+    Main myObj = new Main();
+
+    // Le asigno un valor al atributo x del objeto
+    myObj.x = 40;
+
+    // Muestro en pantalla el valor que le puse a x
+    System.out.println(myObj.x);
+  }
+}
+
+//-----------EJERCICIO 3 ATRIBUTOS--------------------------------------------
+public class Main {
+  // Atributo con un valor inicial de 10
+  int x = 10;
+
+  public static void main(String[] args) {
+    // Creo un objeto de la clase Main
+    Main myObj = new Main();
+
+    // Cambio el valor de x a 25
+    myObj.x = 25;  // ahora x vale 25
+
+    // Muestro el nuevo valor de x
+    System.out.println(myObj.x);
+  }
+}
+
+
+//-----------EJERCICIO 4 ATRIBUTOS--------------------------------------------
+public class Main {
+
+  // Declaro x como final, esto significa que NO se puede cambiar su valor
+  final int x = 10;
+
+  public static void main(String[] args) {
+    // Creo un objeto de la clase Main
+    Main myObj = new Main();
+
+    // Intento cambiar el valor de x, pero esto dará error
+    // porque x es final y no permite modificarlo
+    // myObj.x = 25;
+
+    // Muestro el valor de x (el valor fijo que tiene)
+    System.out.println(myObj.x);
+  }
+}
+
+
