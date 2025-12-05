@@ -1,0 +1,58 @@
+// Clase padre o superclase
+class Animal {
+  // Método que será sobrescrito por las subclases
+  public void animalSound() {
+    System.out.println("The animal makes a sound");
+  }
+}
+
+// Subclase que hereda de Animal
+class Pig extends Animal {
+  // Sobrescribe el método de la clase padre
+  public void animalSound() {
+    System.out.println("The pig says: wee wee");
+  }
+}
+
+// Otra subclase de Animal
+class Dog extends Animal {
+  // Sobrescribe animalSound()
+  public void animalSound() {
+    System.out.println("The dog says: bow wow");
+  }
+}
+
+// Otra subclase de Animal
+class Cat extends Animal {
+  // Sobrescribe animalSound()
+  public void animalSound() {
+        System.out.println("The cat: miauuu");
+    }
+}
+
+// Nueva subclase de Animal
+class Guacamaya extends Animal {
+  // Sobrescribe animalSound()
+  public void animalSound() {
+        System.out.println("The Guacamaya");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Se crean objetos pero usando la referencia del tipo Animal (polimorfismo)
+        Animal myAnimal = new Animal();  
+        Animal myPig = new Pig();        
+        Animal myDog = new Dog();
+        Animal myCat = new Cat();
+        Animal myGuacamaya = new Guacamaya();
+        
+        // Llamada a los métodos sobrescritos
+        myAnimal.animalSound();     // Llama al método de Animal
+        myPig.animalSound();        // Llama al método de Pig
+        myDog.animalSound();        // Llama al método de Dog
+        myCat.animalSound();        // Llama al método de Cat
+        myGuacamaya.animalSound();  // Llama al método de Guacamaya
+    }
+}
+
